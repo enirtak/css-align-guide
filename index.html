@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Align Guide</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>CSS Align - Horizontal & Vertical Align </h1>
+
+    <h2 class="lead">Horizontally</h2>
+
+    <div>
+        <h3>* Block Element</h3>
+        <p>
+            To center a block element, use: 
+            <span class="attention-text">
+                margin: auto;
+            </span>
+        </p>
+        <p>Note: Must set the 
+            <span class="attention-text">width</span>
+            property
+        </p>
+        <div class="block-center border-green">Example</div>
+    </div>
+
+    <div>
+        <h3>* Inline Element</h3>
+        <p>
+            To center a text inside an element, use:
+            <span class="attention-text">
+                text-align: center;
+            </span>
+        </p>
+        <div class="inline-center border-green">Example</div>
+    </div>
+
+    <div>
+        <h3>* Center an Image</h3>
+        <p>
+            To center an image, update the display element to block and set the margin:
+            <span class="attention-text">
+                margin: auto, display: block;
+            </span>
+        </p>
+        <img src="image.jpg" alt="image" class="img-center"/>
+    </div>
+
+    <h2 class="lead">Left & Right Align</h2>
+    <div>
+        <h3>* Using position</h3>
+        <p>
+            You can also use:
+            <span class="attention-text">
+                position: absolute;
+            </span> and update right/left properties.
+        </p>
+        <p>Note: Using absolute position will remove the element from the normal flow.</p>
+        <div class="position-relative">
+            <div class="position-absolute-right border-green">Example</div>
+        </div>
+    </div>
+
+    <div>
+        <h3>* Using float</h3>
+        <p>
+            You can also use:
+            <span class="attention-text">
+                float
+            </span> with left/right values;
+        </p>
+
+        <div class="align-float border-green">
+            Example
+        </div>
+
+        <p>If an element is taller than the element containing it, and float property is used, it will overflow outside its container:</p>
+
+        <h3>Example with no clearflix</h3>
+        <div class="border-green m-5">
+            <img class="img-float" src="image.jpg" alt="image" width="70" height="70">
+            Example
+        </div>
+
+        <h3>Example with clearflix</h3>
+        <div class="div-clearflix border-green m-5">
+            <img class="img-float" src="image.jpg" alt="image" width="70" height="70">
+            Example
+        </div>
+    </div>
+    
+    <h2 class="lead">Vertically</h2>
+
+    <div>
+        <h3>* Using padding</h3>
+        <p>
+            To horizontally center an element, use: 
+            <span class="attention-text">
+                padding
+            </span>
+        </p>
+        <div class="center-vertical-padding border-green">Example</div>
+
+        <p>
+            To horizontally & vertically center an element, use: 
+            <span class="attention-text">padding</span> 
+            and
+            <span class="attention-text">text-align:center;</span> 
+        </p>
+        <div class="center-vertical-padding-align border-green">Example</div>
+    </div>
+
+    <div>
+        <h3>* Using line-height</h3>
+        <p>
+            You can also use
+            <span class="attention-text">line-height</span>
+            with a value equal to the 
+            <span class="attention-text">height</span>:
+        </p>
+        <div class="center-line-height border-green">Example</div>
+        <p>
+            Add <span class="attention-text">text-align:center</span>:
+        </p>
+        <div class="center-line-height-center border-green">Example</div>
+    </div>
+
+    <div>
+        <h3>* Using position & transform</h3>
+        <ol>
+            <li>Set the parent div position to relative</li>
+            <li>
+                Set the child div position to absolute
+            </li>
+        </ol>
+        <div class="position-relative-center border-green mb-5">
+            <div class="position-absolute-center">
+                <span class="attention-text">
+                    top: 50%; left: 50%; transform: translate(-50%, -50%);
+                </span>
+            </div>
+        </div>
+
+        <div class="position-relative-center border-green mb-5">
+            <div class="relative-left">
+                <span class="attention-text">
+                    position: absolute;
+                    top: 50%;
+                    left: 0%;
+                </span>
+            </div>
+        </div>
+        
+        <div class="position-relative-center border-green mb-5">
+            <div class="relative-right">
+                <span class="attention-text">
+                    position: absolute;
+                    top: 50%;
+                    right: 0%;
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>* Using flexbox</h3>
+        <p>To center horizontally & vertically using flex, set 
+            <span class="attention-text">justify-content</span>
+            and
+            <span class="attention-text">align items</span>
+            to 
+            <span class="attention-text">center</span>:
+        </p>
+        <div class="center-flexbox border-green">
+            <span class="attention-text">
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            </span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Itim', cursive, Georgia, 'Times New Roman';
+    color: #3f3f3f;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.border-green {
+    border: 2px solid green;
+}
+
+.attention-text {
+    font-weight: bolder;
+    color: red;
+}
+
+.lead {
+    font-weight: bolder;
+    color: hotpink;
+}
+
+.block-center {
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+}
+
+.inline-center {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.img-center {
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute-right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+}
+
+.align-float {
+    width: 300px;
+    padding: 10px;
+    float: right;
+}
+
+.img-float {
+    float: right;
+}
+
+.div-clearflix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.center-vertical-padding {
+    padding: 70px 0;
+}
+
+.center-vertical-padding-align {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.center-line-height {
+    height: 100px;
+    line-height: 100px;
+}
+
+.center-line-height-center {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.position-relative-center {
+    position: relative;
+    height: 200px;
+}
+
+.position-absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.relative-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+
+.relative-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+}
+
+.center-flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
